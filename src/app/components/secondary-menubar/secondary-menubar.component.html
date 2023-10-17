@@ -1,0 +1,93 @@
+<section class="secondary-menubar-container">
+	<div class="secondary-navbar">
+		<img
+			src="assets/images/ps-mini-logo.svg"
+			alt="Logo mini da Playstation em azul"
+		/>
+
+		<ul class="section-links">
+			<li>
+				<app-section-link
+					(click)="emitClickEvent('jogos')"
+					[label]="'Jogos'"
+					[productOptions]="[
+						{ path: 'PS5', label: 'PS5' },
+						{ path: 'PS4', label: 'PS4' },
+						{ path: 'PS_VR', label: 'PS VR' },
+						{ path: 'PS_PLUS', label: 'PS Plus' },
+						{ path: 'BUY', label: 'Comprar jogos' }
+					]"
+					[footerTopics]="[
+						'PlayStation Indies',
+						'Jogos para PS4 no PS5',
+						'Grátis para Jogar',
+						'Ofertas e promoções'
+					]"
+					[clicked]="sectionLinkClicked['jogos']"
+				></app-section-link>
+			</li>
+			<li>
+				<app-section-link
+					(click)="emitClickEvent('hardware')"
+					[label]="'Hardware'"
+					[productOptions]="[
+						{ path: 'PS5', label: 'PS5' },
+						{ path: 'PS4', label: 'PS4' },
+						{ path: 'PS4', label: 'PS4 Pro' },
+						{ path: 'PS_VR2', label: 'PS VR2' }
+					]"
+					[clicked]="sectionLinkClicked['hardware']"
+				></app-section-link>
+			</li>
+			<li>
+				<app-section-link
+					(click)="emitClickEvent('servicos')"
+					[label]="'Serviços'"
+					[productOptions]="[
+						{ path: 'PS_PLUS', label: 'PS Plus' },
+						{ path: 'PS_STARS', label: 'PS Stars' }
+					]"
+					[clicked]="sectionLinkClicked['servicos']"
+				></app-section-link>
+			</li>
+			<li>
+				<app-section-link
+					(click)="emitClickEvent('noticias')"
+					[label]="'Notícias'"
+					[productOptions]="[
+						{ path: 'PS_BLOG', label: 'PS Blog' },
+						{ path: 'PS_MONTH', label: 'Este mês no PlayStation' }
+					]"
+					[clicked]="sectionLinkClicked['noticias']"
+				></app-section-link>
+			</li>
+			<li>
+				<app-section-link
+					(click)="emitClickEvent('loja')"
+					[label]="'Loja'"
+					[productOptions]="[{ path: 'BUY', label: 'PS Store' }]"
+					[clicked]="sectionLinkClicked['loja']"
+				>
+				</app-section-link>
+			</li>
+			<li>
+				<app-section-link
+					(click)="emitClickEvent('suporte')"
+					[label]="'Suporte'"
+					[productOptions]="[
+						{ path: 'SUPORTE', label: 'Suporte' },
+						{ path: 'PS_STATUS', label: 'Status da PSN' }
+					]"
+					[clicked]="sectionLinkClicked['suporte']"
+				></app-section-link>
+			</li>
+		</ul>
+	</div>
+
+	<div class="section-actions">
+		<button>Iniciar sessão</button>
+		<div class="search-button">
+			<img src="assets/images/search-icon.svg" alt="ícone de pesquisa" />
+		</div>
+	</div>
+</section>

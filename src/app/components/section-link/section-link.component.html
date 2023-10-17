@@ -1,0 +1,23 @@
+<a class="link">
+	<span class="label" [ngClass]="{ focused: clicked }">{{ label }}</span>
+	<span class="arrow-icon"
+		><i class="fa-solid fa-chevron-down" [ngClass]="{ rotate: clicked }"></i
+	></span>
+</a>
+
+<div [ngClass]="{ active: clicked }" class="section-link-modal">
+	<div class="grid-cards">
+		<div class="product-card" *ngFor="let product of productOptions">
+			<div>
+				<img [src]="getProductImage(product.path)" alt="Imagem do Produto" />
+			</div>
+			<p class="product-label">{{ product.label }}</p>
+		</div>
+	</div>
+
+	<ng-container *ngIf="footerTopics.length">
+		<ul class="footer-topics">
+			<li class="topic" *ngFor="let topic of footerTopics">{{ topic }}</li>
+		</ul>
+	</ng-container>
+</div>
