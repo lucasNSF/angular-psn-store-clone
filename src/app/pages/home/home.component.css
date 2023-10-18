@@ -4,7 +4,7 @@
 
 .banner {
 	box-shadow: 0 -7px 7px rgba(0, 0, 0, 0.2);
-	background: url("/assets/images/spiderman-banner.avif");
+	background: url("./../../../assets/images/spiderman-banner.avif");
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;

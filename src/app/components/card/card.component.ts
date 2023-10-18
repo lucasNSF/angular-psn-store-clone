@@ -9,6 +9,6 @@ export class CardComponent {
 	@Input() path: string | undefined;
 
 	getCardImage(): string {
-		return `/assets/images/${this.path}.avif`;
+		return `assets/images/${this.path}.avif`;
 	}
 }
