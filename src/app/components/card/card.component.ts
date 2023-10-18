@@ -1,24 +1,14 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css']
+	selector: 'app-card',
+	templateUrl: './card.component.html',
+	styleUrls: ['./card.component.css'],
 })
-export class CardComponent implements OnInit {
+export class CardComponent {
+	@Input() path: string | undefined;
 
-	@Input()
-	gameCover:string = ""
-	@Input()
-	gameLabel:string=""
-	@Input()
-	gameType:string ="XPTO | PS4"
-	@Input()
-	gamePrice:string = "R$ 399,90"
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+	getCardImage(): string {
+		return `/assets/images/${this.path}.avif`;
+	}
 }

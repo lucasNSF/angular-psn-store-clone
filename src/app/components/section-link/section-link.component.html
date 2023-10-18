@@ -7,7 +7,11 @@
 
 <div [ngClass]="{ active: clicked }" class="section-link-modal">
 	<div class="grid-cards">
-		<div class="product-card" *ngFor="let product of productOptions">
+		<div
+			class="product-card"
+			[ngClass]="{ 'visible-card': clicked }"
+			*ngFor="let product of productOptions"
+		>
 			<div>
 				<img [src]="getProductImage(product.path)" alt="Imagem do Produto" />
 			</div>
@@ -16,7 +20,7 @@
 	</div>
 
 	<ng-container *ngIf="footerTopics.length">
-		<ul class="footer-topics">
+		<ul class="footer-topics" [ngClass]="{ 'footer-active': clicked }">
 			<li class="topic" *ngFor="let topic of footerTopics">{{ topic }}</li>
 		</ul>
 	</ng-container>

@@ -1,1 +1,35 @@
-<div class="home__container"></div>
+<div class="banner-container">
+	<div class="banner">
+		<div class="spiderman-title">
+			<img
+				src="assets/images/spiderman-title.avif"
+				alt="Título do game SpiderMan"
+			/>
+		</div>
+
+		<div class="spiderman-animation">
+			<img
+				src="assets/images/spiderman-animation.avif"
+				alt="Ilustração do jogo SpiderMan"
+			/>
+		</div>
+	</div>
+
+	<div class="banner-info">
+		<div>
+			<h2 class="banner-title">Marvel's Spider-Man 2</h2>
+			<h3 class="banner-desc">Sejam Melhores. Juntos.</h3>
+		</div>
+
+		<button>Pré-reserve Agora</button>
+	</div>
+</div>
+
+<section class="cards-banner">
+	<app-card [path]="'crew'"></app-card>
+	<app-card [path]="'offers'"></app-card>
+	<app-card [path]="'blazers'"></app-card>
+	<app-card [path]="'elden-ring'"></app-card>
+	<app-card [path]="'starrail'"></app-card>
+	<app-card [path]="'horizon'"></app-card>
+</section>

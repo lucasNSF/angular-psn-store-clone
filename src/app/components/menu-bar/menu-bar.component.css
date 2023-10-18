@@ -11,3 +11,42 @@
 #sonyLogo {
 	max-width: 5rem;
 }
+
+.main-menubar {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	margin-top: 1rem;
+	padding: 1.2rem 0;
+	box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.psn-logo {
+	position: absolute;
+	left: 0;
+}
+
+.psn-logo > img {
+	max-width: 9rem;
+	margin-left: 1.9rem;
+}
+
+.nav-list {
+	display: flex;
+	list-style-type: none;
+	gap: 2.5rem;
+}
+
+.nav-list li {
+	font-weight: 700;
+	transition: 0.2s;
+	padding: 0.3rem 0.8rem;
+	border-radius: 50px;
+}
+
+.nav-list li:hover {
+	cursor: pointer;
+	background-color: #ededed;
+}
